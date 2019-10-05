@@ -4,13 +4,13 @@ jobs:
     docker:
       #- image: circleci/<langage>:<version TAG>
     steps:
-      - checkout
+      #- checkout
       #- run : <command>
   test: 
     docker:
       #- image: circleci/<langage>:<version TAG>
     steps:
-      - checkout
+      #- checkout
       #- run: <command>
 workflows:
   version: 2
