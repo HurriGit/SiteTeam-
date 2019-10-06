@@ -7,7 +7,7 @@
     "start": "babel-watch src/index.js -w src/js --passWithNoTests",
     "test": "npm run jest --passWithNoTests",
     "jest": "jest --coverage --passWithNoTests",
-    "install" : "npm install"
+    "install" : "npm ci"
   },
   "repository": {
     "type": "git",
