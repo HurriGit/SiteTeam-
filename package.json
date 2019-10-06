@@ -4,13 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "babel-watch src/index.js -w src/js",
-    "test": "npm run jest",
-    "jest": "jest --coverage",
-    "isima-install": "rm -f package-lock.json && npm install --no-bin-links",
-    "isima-start": "./node_modules/babel-watch/babel-watch.js src/index.js -w src/views",
-    "isima-test": "npm run isima-jest",
-    "isima-jest": "./node_modules/jest/bin/jest.js --coverage"
+    "start": "babel-watch src/index.js -w src/js --passWithNoTests",
+    "test": "npm run jest --passWithNoTests",
+    "jest": "jest --coverage --passWithNoTests"
   },
   "repository": {
     "type": "git",
@@ -28,7 +24,6 @@
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
-    "babel-core": "^7.6.2-bridge.0",
     "babel-jest": "^23.4.2",
     "babel-watch": "^2.0.7",
     "jest": "^25.0.0",
