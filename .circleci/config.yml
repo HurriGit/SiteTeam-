@@ -9,6 +9,6 @@ jobs:
     machine : true
     steps:
       - checkout
-      - run : npm run install
+      #- run : npm run install
       - run : npm run test
       - run : echo "Test passé"
