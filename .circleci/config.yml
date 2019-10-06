@@ -6,6 +6,7 @@ cache:
 
 jobs:
   build:
+    machine : true
     steps:
       - checkout
       - run : npm run install
