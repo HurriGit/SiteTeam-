@@ -5,7 +5,7 @@ cache:
   - node_modules/
 
 jobs:
-  build:
-    script:
-    - npm run install
-    - npm run test
+  - build:
+    - script:
+      - npm run install
+      - npm run test
