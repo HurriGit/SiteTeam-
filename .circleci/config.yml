@@ -1,20 +1,17 @@
-version: 2
-jobs:
-  build:
-    docker:
-      #- image: circleci/<langage>:<version TAG>
-    steps:
-      #- checkout
-      #- run : <command>
-  test: 
-    docker:
-      #- image: circleci/<langage>:<version TAG>
-    steps:
-      #- checkout
-      #- run: <command>
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      #- build
-      #- test
+image: node:8.10.0
+
+cache:
+  paths:
+  - node_modules/
+
+stages:
+  - build
+
+test_async:
+  stage: build
+  script:
+   #- npm run isima-install
+   #- echo "Rémi tu es buildé"
+   #- npm run isima-jest
+  tags:
+    - docker

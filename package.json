@@ -1,0 +1,40 @@
+{
+  "name": "site_team_ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "babel-watch src/index.js -w src/js",
+    "test": "npm run jest",
+    "jest": "jest --coverage",
+    "isima-install": "rm -f package-lock.json && npm install --no-bin-links",
+    "isima-start": "./node_modules/babel-watch/babel-watch.js src/index.js -w src/views",
+    "isima-test": "npm run isima-jest",
+    "isima-jest": "./node_modules/jest/bin/jest.js --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HurriGit/SiteTeam-.git"
+  },
+  "author": "HurriGit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HurriGit/SiteTeam-/issues"
+  },
+  "homepage": "https://github.com/HurriGit/SiteTeam-#readme",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7",
+    "jest": "^23.6.0",
+    "supertest": "^3.3.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  }
+}
