@@ -6,7 +6,8 @@
   "scripts": {
     "start": "babel-watch src/index.js -w src/js --passWithNoTests",
     "test": "npm run jest --passWithNoTests",
-    "jest": "jest --coverage --passWithNoTests"
+    "jest": "jest --coverage --passWithNoTests",
+    "install" : "rm -f package-lock.json && npm install"
   },
   "repository": {
     "type": "git",
