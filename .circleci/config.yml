@@ -4,13 +4,8 @@ cache:
   paths:
   - node_modules/
 
-stages:
-  - build
 jobs:
-  test_async:
-    stage: build
+  build:
     script:
     - npm run install
     - npm run test
-    tags:
-      - docker
