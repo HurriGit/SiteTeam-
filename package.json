@@ -7,7 +7,7 @@
     "start": "babel-watch src/index.js -w src/js --passWithNoTests",
     "test": "npm run jest --passWithNoTests",
     "jest": "jest --coverage --passWithNoTests",
-    "install" : "npm ci"
+    "install" : "npm install"
   },
   "repository": {
     "type": "git",
@@ -20,15 +20,15 @@
   },
   "homepage": "https://github.com/HurriGit/SiteTeam-#readme",
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.2"
+    "materialize-css": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
-    "babel-jest": "^23.4.2",
-    "babel-watch": "^2.0.7",
-    "jest": "^25.0.0",
-    "supertest": "^3.3.0"
+    "babel-jest": "^24.9.0",
+    "babel-watch": "^7.0.0",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
   },
   "jest": {
     "testEnvironment": "node",
